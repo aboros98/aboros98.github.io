@@ -1,6 +1,6 @@
 baseURL = "https://aboros98.github.io/"
 languageCode = "en-us"
-theme = "anubis2"
+theme = "PaperMod"
 title = "abc - blogpost"
 
 [author]
