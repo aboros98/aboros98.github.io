@@ -3,7 +3,7 @@ languageCode = "en-us"
 theme = "PaperMod"
 title = "abc - blogpost"
 
-[author]
+[params.author]
 name = "Boros Andrei"
 email = "borosandrei1998@gmail.com"
 
