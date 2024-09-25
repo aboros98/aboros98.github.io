@@ -10,9 +10,6 @@ summaryLength = 30
 [params]
 # Author info (as per PaperMod requirements)
 author = "Boros Andrei"
-# You can also specify author as:
-# author = ["Me", "You"] # multiple authors
-
 # Other params
 description = "A blog about my thoughts on academic papers"
 dateFormat = "January 2, 2006"
@@ -20,7 +17,7 @@ defaultTheme = "auto" # dark, light, auto
 showReadingTime = true
 showShareButtons = false
 showPostNavLinks = true
-showBreadCrumbs = true
+showBreadCrumbs = false  # Set this to false to remove the breadcrumbs
 showCodeCopyButtons = true
 showRssButtonInSectionTermList = true
 
@@ -32,11 +29,24 @@ showRssButtonInSectionTermList = true
   # Social Icons
   [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/yourgithubusername"
+  url = "https://github.com/aboros98"
 
   [[params.socialIcons]]
   name = "email"
   url = "mailto:borosandrei1998@gmail.com"
+
+[menu]
+  [[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/"
+  weight = 10
+
+  [[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 20
 
 [markup.goldmark.renderer]
 unsafe = true # Enable unsafe mode to render raw HTML
