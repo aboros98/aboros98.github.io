@@ -3,16 +3,46 @@ languageCode = "en-us"
 theme = "PaperMod"
 title = "abc - blogpost"
 
-[params.author]
-name = "Boros Andrei"
-email = "borosandrei1998@gmail.com"
+# Additional recommended settings
+paginate = 5
+summaryLength = 30
 
 [params]
+# Author info (as per PaperMod requirements)
+author = "Boros Andrei"
+# You can also specify author as:
+# author = ["Me", "You"] # multiple authors
+
+# Other params
 description = "A blog about my thoughts on academic papers"
 dateFormat = "January 2, 2006"
+defaultTheme = "auto" # dark, light, auto
+showReadingTime = true
+showShareButtons = false
+showPostNavLinks = true
+showBreadCrumbs = true
+showCodeCopyButtons = true
+showRssButtonInSectionTermList = true
+
+  # Home page settings
+  [params.homeInfoParams]
+  Title = "Welcome to my academic blog"
+  Content = "Here I share my thoughts on various academic papers."
+
+  # Social Icons
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/yourgithubusername"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:borosandrei1998@gmail.com"
 
 [markup.goldmark.renderer]
-unsafe = true # Enable unsafe mode to have a better experience
+unsafe = true # Enable unsafe mode to render raw HTML
 
 [markup.highlight]
-style = 'base16-snazzy' # Highlight.js style
+style = "monokai" # or any other style supported by Hugo
+lineNos = true
+lineNumbersInTable = true
+noClasses = false
